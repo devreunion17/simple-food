@@ -3,6 +3,321 @@
 @import 'reset';
 @import 'global';
 
+.button {
+  background-color: $accent;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  transition: background-color 0.4s,
+    border-color .4s;
+  padding: 13px 32px;
+
+}
+
+.title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+
+.header {
+  margin-bottom: 120px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    color: $title;
+  }
+
+  &__content--title {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    max-width: 450px;
+  }
+
+  &__scooter--img {
+    max-width: 560px;
+    height: 560px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__title--time {
+    color: $accent;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: $default;
+  }
+
+  &__button {
+
+    width: 146px;
+    padding: 12px 24px;
+    margin-right: 34px;
+    font-size: 18px;
+
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list--item+.menu__list--item {
+    padding-left: 45px;
+  }
+
+  &__list--link {
+    font-size: 18px;
+    color: $default;
+    line-height: 1.2;
+    transition: hover 0.4s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__list--active {
+    color: $accent;
+  }
+}
+
+
+.usernav {
+  &__list {
+    display: flex;
+    position: relative;
+  }
+
+  &__list--item:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  &__numb {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $accent;
+    top: -5px;
+    right: -5px;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+
+.categories {
+  text-align: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-bottom: 45px;
+    background-color: #FFFF;
+    line-height: 1.3;
+    color: $title;
+    padding: 10px 32px;
+    position: relative;
+    width: 181px;
+    font-size: 20px;
+    line-height: 1.3;
+
+    &:hover {
+      background-color: $accent;
+    }
+
+  }
+
+  &__item::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    width: 44px;
+    height: 44px;
+    left: 0px;
+  }
+
+  &__item--burger::before {
+    background-image: url('../images/burger1.svg');
+    color: $accent;
+  }
+
+  &__item--pizza::before {
+    background-image: url('../images/pizza.svg');
+  }
+
+  &__item--sandwich::before {
+    background-image: url('../images/sandwich.svg');
+  }
+
+  &__item--asia::before {
+    background-image: url('../images/asia.svg');
+  }
+
+  &__item--sets::before {
+    background-image: url('../images/dish.svg');
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  grid-template-rows: 300px 300px;
+  margin-bottom: 60px;
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    background-color: #FFFF;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  &__item--title {
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: auto;
+    font-size: 15px;
+    line-height: 1.1;
+    color: $default;
+  }
+
+  &__item--title::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140px;
+    height: 140px;
+    bottom: 44px;
+    left: -20px;
+
+  }
+
+  &__item--chiesburger::before {
+    background-image: url('../images/chiesburger.png');
+  }
+
+  &__item--biefburger::before {
+    background-image: url('../images/biefburger.png');
+  }
+
+  &__item--kingburger::before {
+    background-image: url('../images/item_01-480x480.png');
+  }
+
+  &__item--blackburger::before {
+    background-image: url('../images/blackburger.png');
+  }
+
+  &__item--chiekenburger::before {
+    background-image: url('../images/chiekenburger.png');
+  }
+
+  &__item--button {
+    display: block;
+    padding: 7px 0;
+    background-color: $accent;
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 5%;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #FFFFFF;
+  }
+
+  &__item--price {
+    margin-bottom: 10px;
+  }
+
+  &__item--add {
+    text-decoration: underline;
+  }
+}
+
+
+.footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  &__top-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__top-social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-form--input {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #C2C2C2;
+  }
+
+  &__top-list--item {
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    color: $default;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @import 'media';

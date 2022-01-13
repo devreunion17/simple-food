@@ -1,5 +1,13 @@
-
-
-body{
+body {
   font-size: 20px;
+  background-color: #F9FAFF;
+  font-family: 'Rubik',
+  sans-serif;
+  color: $default;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }

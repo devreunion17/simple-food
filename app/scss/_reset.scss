@@ -33,7 +33,7 @@ dd {
   margin: 0;
 }
 
-ul[class] {
+ul {
   list-style: none;
 }
 
@@ -46,6 +46,14 @@ input,
 button,
 textarea,
 select {
+  font: inherit;
+}
+
+button {
+  padding: 0;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
   font: inherit;
 }
 
