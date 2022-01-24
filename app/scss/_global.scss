@@ -1,9 +1,10 @@
 body {
   font-size: 20px;
   background-color: #F9FAFF;
-  font-family: 'Rubik',
-  sans-serif;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
   color: $default;
+  @extend %Rubik-400
 }
 
 .container {
@@ -11,3 +12,94 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 45px;
+}
+
+.button {
+  display: inline-block;
+  appearance: none;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 5px;
+  background-color: $accent;
+  cursor: pointer;
+  color: #fff;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.3;
+  transition: background-color 0.4s ease, border-color 0.4s, box-shadow 0.4s linear, color;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px $accent;
+  }
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: $accent;
+    box-shadow: 0 0 0 2px $accent;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 30px rgba(255, 255, 255, 0.1);
+    transform: translateY(2px);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+ .animation {
+   font-size: 18px;
+   color: $default;
+   line-height: 1.2;
+   transition: box-shadow 0.4s, color 0.4s, background-color 0,4s ease, text-shadow 0,4s;
+
+   &:hover {
+     color: $accent;
+   }
+
+   &:active {
+     text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+   }
+
+   &:focus {
+     box-shadow: 0px 0px 0px 2px $accent;
+     border-radius: 5px;
+   }
+ }
+
+ .animation2{
+  &:hover {
+    background-color: $accent;
+    border-radius: 5px;
+    fill: stroke #FFffff;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px $accent;
+    border-radius: 5px;
+    background-color: rgba(255, 122, 80, 0.1);
+    color: $accent;
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: rgba(255, 122, 80, 0.1);
+    color: $accent;
+  }
+ }
