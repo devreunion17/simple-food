@@ -599,27 +599,27 @@ article {
 
   .slick-dots {
     position: relative;
-    bottom: -34px;
+    bottom: -33px;
 
-    &::before {
-      content: "";
-      left: 50px;
-      position: absolute;
-      background-image: url('../images/prev-arrow.svg');
-      background-repeat: no-repeat;
-      height: 34px;
-      width: 34px;
-    }
+    // &::before {
+    //   content: "";
+    //   left: 50px;
+    //   position: absolute;
+    //   background-image: url('../images/prev-arrow.svg');
+    //   background-repeat: no-repeat;
+    //   height: 34px;
+    //   width: 34px;
+    // }
 
-    &::after {
-      content: "";
-      right: 50px;
-      position: absolute;
-      background-image: url('../images/next-arrow.svg');
-      background-repeat: no-repeat;
-      height: 34px;
-      height: 34px;
-    }
+    // &::after {
+    //   content: "";
+    //   right: 50px;
+    //   position: absolute;
+    //   background-image: url('../images/next-arrow.svg');
+    //   background-repeat: no-repeat;
+    //   height: 34px;
+    //   height: 34px;
+    // }
 
 
     li {
@@ -634,12 +634,9 @@ article {
         height: 15px;
         border-radius: 50px;
 
-
-
-
         // &::before {
         //   content: '';
-        //   // position: absolute;
+        //   position: absolute;
         //   width: 6px;
         //   height: 6px;
         //   border-radius: 50%;
@@ -659,39 +656,33 @@ article {
     }
   }
 
-  //  prevArrow: "<img src='../images/prev arrow.svg' class='prev' alt='1'>",
-  //  nextArrow: "<img src='../images/next-arrow.svg' class='next' alt='2'>",
+  .slick-arrow {
+    bottom: -41px;
+    position: absolute;
+    z-index: 3;
+    transition: box-shadow 0.4s, color 0.4s, background-color 0.4s ease, text-shadow 0.4s;
 
+    &:hover {
+      color: $accent;
+    }
 
+    &:active {
+      text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+    }
 
-  // .slick-arrow {
-  //   bottom: -30px;
-  //   position: absolute;
-  //   z-index: 3;
-  //   transition: box-shadow 0.4s, color 0.4s, background-color 0.4s ease, text-shadow 0.4s;
+    &:focus {
+      box-shadow: 0 0 0 2px $accent;
+      border-radius: 5px;
+    }
+  }
 
-  //   &:hover {
-  //     color: $accent;
-  //   }
+  .rewiev__slider .slick-arrow.prev {
+    left: 470px;
+  }
 
-  //   &:active {
-  //     text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
-  //   }
-
-  //   &:focus {
-  //     box-shadow: 0 0 0 2px $accent;
-  //     border-radius: 5px;
-  //   }
-
-  // }
-
-  // .rewiev__slider .slick-arrow.prev {
-  //   left: 300px;
-  // }
-
-  // .rewiev__slider .slick-arrow.next {
-  //   left: 450px;
-  // }
+  .rewiev__slider .slick-arrow.next {
+    left: 655px;
+  }
 
   &__item {
     max-width: 990px;
@@ -699,7 +690,6 @@ article {
     display: flex;
     align-items: center;
   }
-
 
   &__blockquote {
     text-align: left;
