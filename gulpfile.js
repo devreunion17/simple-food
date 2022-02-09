@@ -29,16 +29,23 @@ function styles() {
   .pipe(browserSync.stream())
 }
 
+
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'app/js/main.js'
+    // 'node_modules/jquery/dist/jquery.min.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.min.js',
+    'app/js/main.js',
+    'app/js/jguery-3.6.6.min.js'
   ])
   .pipe(concat('main.min.js'))
   .pipe(uglify())
   .pipe(dest('app/js'))
   .pipe(browserSync.stream())
 }
+
+
 
 function images(){
   return src('app/images/**/*.*')

@@ -40,6 +40,18 @@ ul {
 img {
   max-width: 100%;
   display: block;
+  outline: transparent;
+}
+
+address {
+  font-style: normal;
+}
+
+a,
+button,
+input,
+textarea {
+  outline: transparent;
 }
 
 input,
@@ -49,21 +61,18 @@ select {
   font: inherit;
 }
 
-input,
-textarea {
-  outline: none;
-}
-
 button {
   padding: 0;
   border: transparent;
   background-color: transparent;
   cursor: pointer;
   font: inherit;
+  appearance: none;
 
 }
 
 a {
   text-decoration: none;
   color: inherit;
+
 }
