@@ -20,74 +20,78 @@
 </head>
 
 <body>
-  
+
   <div class="wrapper">
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <nav class="header__menu">
-            <a class="logo header__logo" href="#">
-              <img class="logo__img" src="images/logo.svg" alt="логотип сайта" width="200" height="39">
-            </a>
-            <ul class="menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link menu-list__color animation" href="#">Главная</a>
+          <div class="header__top">
+            
+            <nav class="header__menu">
+              <a class="logo header__logo" href="#">
+                <img class="logo__img" src="images/logo.svg" alt="логотип сайта" width="200" height="39">
+              </a>
+
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-list__color animation" href="#">Главная</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link animation" href="#">Блюда</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link animation" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="usernav">
+              <li class="usernav__item">
+                <div class="search-box">
+                  <form action="" class="form">
+                    <label class="label" for="search"></label>
+                    <input name="search" type="text" placeholder="Введите для поиска..">
+                    <span class="sr-only">Поле поиска</span>
+                  </form>
+
+                  <div class="search-btn">
+                    <i class="fas"> <button class="usernav__button" type="submit">
+                        <svg width="21" height="22" viewbox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <ellipse cx="9.76663" cy="10.6301" rx="8.98856" ry="8.88424" stroke="#363853"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M16.0184 17.2708L19.5424 20.7448" stroke="#363853" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button></i>
+                  </div>
+                  <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="search-data"></div>
+                </div>
               </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link animation" href="#">Блюда</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link animation" href="#">Контакты</a>
+
+              <li class="usernav__item">
+                <button class="usernav__button">
+                  <svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
+                      stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.375 8.63337H15.1479" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z"
+                      stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
+                      stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span class="sr-only">корзина для товаров</span>
+                </button>
+                <span class="usernav__numb">4</span>
               </li>
             </ul>
-          </nav>
-
-          <ul class="usernav">
-            <li class="usernav__item">
-              <div class="search-box">
-                <form action="" class="form">
-                  <label class="label" for="search"></label>
-                  <input name="search" type="text" placeholder="Введите для поиска..">
-                  <span class="sr-only">Поле поиска</span>
-                </form>
-
-                <div class="search-btn">
-                  <i class="fas"> <button class="usernav__button" type="submit">
-                      <svg width="21" height="22" viewbox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="9.76663" cy="10.6301" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M16.0184 17.2708L19.5424 20.7448" stroke="#363853" stroke-width="1.5"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button></i>
-                </div>
-                <div class="cancel-btn">
-                  <i class="fas fa-times"></i>
-                </div>
-                <div class="search-data"></div>
-              </div>
-            </li>
-
-            <li class="usernav__item">
-              <button class="usernav__button">
-                <svg width="21" height="20" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
-                    stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M12.375 8.63337H15.1479" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z"
-                    stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
-                    stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span class="sr-only">корзина для товаров</span>
-              </button>
-              <span class="usernav__numb">4</span>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>

@@ -17,7 +17,15 @@ $(function () {
 
 
 
-
+  $window = $(window);
+  $window.scroll(function () {
+    $scrollPosition = $window.scrollTop();
+    if ($scrollPosition > 50) {
+      $('.header__inner').addClass('header__inner--bg');
+    } else {
+      $('.header__inner').removeClass('header__inner--bg');
+    }
+  })
 
 
 });
