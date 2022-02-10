@@ -231,7 +231,6 @@
     justify-content: space-between;
     color: $title;
     align-items: center;
-    padding-bottom: 120px;
   }
 
   &__content {
@@ -274,7 +273,6 @@
 
 .top-product {
   text-align: center;
-  margin-bottom: 120px;
 
   &__title {
     margin-bottom: 60px;
@@ -401,7 +399,6 @@ article {
     justify-content: space-between;
     max-width: 1030px;
     width: 100%;
-    padding-bottom: 120px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -483,7 +480,6 @@ article {
 }
 
 .restorants {
-  padding-bottom: 120px;
   text-align: center;
 
   &__list {
@@ -590,7 +586,7 @@ article {
 
 .rewiev {
   text-align: center;
-  padding-bottom: 130px;
+  padding-bottom: 10px;
 
   &__slider {
     max-width: 100%;
@@ -752,7 +748,6 @@ article {
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 120px;
     align-items: center;
   }
 
@@ -933,6 +928,38 @@ article {
 }
 
 
+ @media (max-width: 1200px){
+   body {
+     font-size: 18px;
+     line-height: 1.5;
+   }
+
+ .section {
+   padding: 100px 0;
+ }
+
+ .title {
+   font-size: 44px;
+   line-height: 1.3;
+   margin-bottom: 55px;
+ }
+ }
+
+@media (max-width: 992px){
+
+
+
+}
+
+ @media (max-width: 768px) {
+
+
+
+ }
+
+@media (max-width: 375px) {
+
+}
 
 
 
